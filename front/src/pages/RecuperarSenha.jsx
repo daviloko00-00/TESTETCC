@@ -17,7 +17,7 @@ export default function RecuperarSenha() {
     setMsg('Enviando...');
 
     try {
-      const response = await fetch('http://localhost:3000/auth/reenviar-email', {
+      const response = await fetch('https://testetc.onrender.com/auth/reenviar-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: emailTrimmed })

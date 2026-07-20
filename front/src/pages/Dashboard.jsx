@@ -25,7 +25,7 @@ export default function Dashboard() {
   useEffect(() => {
     async function buscarDadosExistentes() {
       try {
-        const response = await fetch(`http://localhost:3000/dadosCorporais/usuario/${idUsuario}`);
+        const response = await fetch(`https://testetc.onrender.com/dadosCorporais/usuario/${idUsuario}`);
         // Note: A rota atual no backend é GET /dadosCorporais/ passando id? Ou GET /dadosCorporais/:idDados?
         // Em dadosRoutes.js a rota buscarPorUsuario está mapeada como GET "/" (conflita com listar).
         // Por via das dúvidas, vamos apenas aguardar o envio do formulário, ou assumir vazio inicialmente.

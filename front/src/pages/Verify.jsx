@@ -18,7 +18,7 @@ export default function Verify() {
       }
       
       try {
-        const response = await fetch(`http://localhost:3000/auth/verificar-email?token=${encodeURIComponent(token)}`);
+        const response = await fetch(`https://testetc.onrender.com/auth/verificar-email?token=${encodeURIComponent(token)}`);
         
         let data = {};
         const text = await response.text();
